@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif; /* Optional: Set a custom font-family */
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.75em; /* Optional: Increase font size for the heading */
+}
+
+.dish {
+    box-sizing: border-box;
+    border: 3px solid #000;
+    padding: 0px;
+    margin: 10px;
+    background-color: #f0f0f0; /* Set a background color for the sections */
+}
+
+.title {
+    position: relative;
+    top: 0;
+    right: 0;
+    background-color: #49d34d; /* Set a background color for the title region */
+    border: 2px solid #000;
+    border-top: none;
+    border-right: none;
+    color: #fff;
+    padding: 5px 30px;
+    float: right;
+    display: block;
+    width: fit-content;
+    font-size: 125%; /* Optional: Increase font size for the section title */
+}
+
+p {
+    content: "";
+    clear: right;
+    display: table;
+    padding: 20px;
+}
+
+#chicken{
+    color: #000;
+    font-weight: bold;
+}
+
+#beef{
+    color: white;
+    background-color: blueviolet;
+    font-weight: bold;
+}
+
+#sushi{
+    color: #000;
+    font-weight: bold;
+}
+
+/* Desktop View */
+@media (min-width: 992px) {
+    .dish {
+        width: 30%;
+        float: left;
+    }
+}
+
+/* Tablet View */
+@media (min-width: 768px) and (max-width: 991px) {
+    .dish {
+        width: 47.3%;
+        float: left;
+    }
+
+    #sushi {
+        width: 97.2%;
+        clear: both;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 767px) {
+    .dish {
+        width: 97.5%;
+    }
+}
